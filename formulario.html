@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario</title>
+</head>
+
+<body bgcolor="#f0f0f0">
+    <!-- FORMULARIO 1: Registro de Usuario -->
+    <center>
+        <form>
+            <fieldset style="width: 80%; max-width: 500px">
+                <legend>
+                    <h3>Registro</h3>
+                </legend>
+                <label for="nombre_registro">Nombre:</label>
+                <input type="text" id="nombre_registro" name="nombre" placeholder="Tu nombre" required /><br /><br />
+                <label for="email_registro">Email:</label>
+                <input type="email" id="email_registro" name="email" placeholder="ejemplo@dominio.com"
+                    required /><br /><br />
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required /><br /><br />
+                <p>Género:</p>
+                <label><input type="radio" name="genero" value="masculino" required />
+                    Masculino</label>
+                <label><input type="radio" name="genero" value="femenino" required />
+                    Femenino</label>
+                <label><input type="radio" name="genero" value="otro" required />
+                    Otro</label><br /><br />
+                <input type="submit" value="Registrarse" />
+                <input type="reset" value="Borrar" />
+            </fieldset>
+        </form>
+    </center>
+    <br />
+
+    <!-- FORMULARIO 2: Contacto -->
+    <center>
+        <form>
+            <fieldset style="width: 80%; max-width: 500px">
+                <legend>
+                    <h3>Contacto</h3>
+                </legend>
+                <label for="nombre_contacto">Nombre:</label>
+                <input type="text" id="nombre_contacto" name="nombre" placeholder="Tu nombre" required /><br /><br />
+                <label for="email_contacto">Email:</label>
+                <input type="email" id="email_contacto" name="email" placeholder="ejemplo@dominio.com"
+                    required /><br /><br />
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required /><br /><br />
+                <label for="comentario">Comentarios:</label><br />
+                <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe tu mensaje aquí"
+                    required></textarea><br /><br />
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Borrar" />
+            </fieldset>
+        </form>
+    </center>
+    <br />
+
+    <!-- FORMULARIO 3: Encuesta -->
+    <center>
+        <form>
+            <fieldset style="width: 80%; max-width: 500px">
+                <legend>
+                    <h3>Encuesta</h3>
+                </legend>
+                <p>Género:</p>
+                <label><input type="radio" name="genero_encuesta" value="masculino" required />
+                    Masculino</label>
+                <label><input type="radio" name="genero_encuesta" value="femenino" required />
+                    Femenino</label>
+                <label><input type="radio" name="genero_encuesta" value="otro" required />
+                    Otro</label><br /><br />
+                <p>Intereses:</p>
+                <label><input type="checkbox" name="intereses" value="deportes" />
+                    Deportes</label>
+                <label><input type="checkbox" name="intereses" value="musica" />
+                    Música</label>
+                <label><input type="checkbox" name="intereses" value="historia" />
+                    Historia</label>
+                <label><input type="checkbox" name="intereses" value="viajes" />
+                    Viajes</label><br /><br />
+                <input type="submit" value="Enviar Encuesta" />
+                <input type="reset" value="Borrar" />
+            </fieldset>
+        </form>
+    </center>
+</body>
+
+</html>

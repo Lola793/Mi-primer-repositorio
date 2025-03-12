@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Party</title>
+</head>
+<body bgcolor="#004466">
+
+<!-- Encabezado del formulario -->
+<table width="100%">
+    <tr>
+        <td align="center"><font color="#ffcc00"><h1>&#128221; Formulario</h1></font></td>
+    </tr>
+</table>
+
+<form>
+    <fieldset>
+        <legend><font color="#ffcc00"><h2>Rellene las opciones siguientes</h2></font></legend>
+
+        <!-- Tabla para organización visual más clara -->
+        <table width="100%">
+            <tr>
+                <td valign="top">
+                    <!-- Selección de asignaturas -->
+                    <font color="#ffcc00"><b>&#128218; Asignatura:</b></font><br>
+                    <font color="#ffffff">
+                    <input type="radio" name="asignatura" id="lengua" value="asignaturalengua" required> Lengua<br>
+                    <input type="radio" name="asignatura" id="matematicas" value="asignaturamatematicas" required> Matemáticas<br>
+                    <input type="radio" name="asignatura" id="historia" value="asignaturahistoria" required> Historia<br>
+                    <input type="radio" name="asignatura" id="geografia" value="asignaturageografia" required> Geografía<br><br>
+                    </font>
+                </td>
+                <td valign="top">
+                    <!-- Si quisiesemos hacer una seleccion multiple con un deplegable habría que hacerlo usando JavaScript-->
+                    <!-- Seleccion multiple -->
+                    <font color="#ffcc00"><b>&#128203; Elija asignaturas (múltiple):</b></font><br>
+                    <select name="asignatura" multiple required size="3">
+                        <option value="lengua">Lengua</option>
+                        <option value="matematicas">Matemáticas</option>
+                        <option value="historia">Historia</option>
+                        <option value="geografia">Geografía</option>           
+                    </select><br><br>
+                    <!-- Seleccion en desplegable -->
+                    <font color="#ffcc00"><b>&#128203; Elija asignaturas (desplegable):</b></font><br>
+                    <select name="asignatura" id="asignatura">
+                        <option value="lengua">Lengua</option>
+                        <option value="matematicas">Matemáticas</option>
+                        <option value="historia">Historia</option>
+                        <option value="geografia">Geografía</option>
+                    </select>
+                </td>
+                    <!-- Selector de color -->
+                    <font color="#ffcc00"><b>&#127912; Elija un color:</b></font>
+                    <input type="color" name="color" required><br><br>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Datos del estudiante -->
+        <font color="#ffcc00"><b>&#127979; Instituto:</b></font>
+        <input type="text" name="instituto" required> &nbsp;&nbsp;
+
+        <font color="#ffcc00"><b>&#127891; Estudios elegidos:</b></font>
+        <input type="text" name="estudios" required><br><br>
+
+        <!-- Selección de fichero -->
+        <font color="#ffcc00"><b>&#128194; Elija un archivo:</font></b></font>
+        <input type="file" name="fichero" required><br><br>
+
+        <hr>
+
+        <!-- Checkboxes para días disponibles -->
+        <font color="#ffcc00"><b>&#128197; Días disponibles:</b></font><br>
+        <font color="#ffffff">
+            <input type="checkbox" name="dia" value="dialunes"> Lunes<br>
+            <input type="checkbox" name="dia" value="diamartes"> Martes<br>
+            <input type="checkbox" name="dia" value="diamiercoles"> Miércoles<br>
+            <input type="checkbox" name="dia" value="diajueves"> Jueves<br>
+            <input type="checkbox" name="dia" value="diasabado"> Sábado<br><br>
+        </font>
+
+        <hr>
+
+        <!-- Lenguaje favorito -->
+        <font color="#ffcc00"><b>&#128187; Lenguaje favorito:</b></font><br>
+        <font color="#ffffff">
+            <input type="radio" name="lenguaje" value="lenguajejava" required> Java<br>
+            <input type="radio" name="lenguaje" value="lenguajepython" required> Python<br>
+            <input type="radio" name="lenguaje" value="lenguajehtml" required> HTML<br>
+            <input type="radio" name="lenguaje" value="lenguajevisual_basic" required> Visual Basic<br>
+            <input type="radio" name="lenguaje" value="lenguajecss" required> CSS<br><br>
+        </font>
+        
+        <hr>
+
+        <!-- Datos personales -->
+        <font color="#ffcc00"><b>&#128100; Nombre:</b></font>
+        <input type="text" name="nombre" required><br>
+        <font color="#ffcc00"><b>&#128101; Apellidos:</b></font>
+        <input type="text" name="apellidos" required><br>
+        <font color="#ffcc00"><b>&#9993; Email:</b></font>
+        <input type="text" name="email" required><br>
+        <font color="#ffcc00"><b>&#128222; Teléfono:</b></font>
+        <input type="text" name="telefono" required><br><br>
+
+        <hr>
+
+        <!-- Área para comentarios -->
+        <font color="#ffcc00"><b>&#128172; Por favor, complete estas opciones:</b></font><br>
+        <textarea name="comentarios" rows="6" cols="45" required>Utilice este recuadro por favor</textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+    </fieldset>
+</form>
+
+<hr>
+
+</body>
+</html>
