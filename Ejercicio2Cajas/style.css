@@ -1,0 +1,27 @@
+/* Establece position: relative en el contenedor*/
+.contenedor {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: #e0e0e0;
+    border: 2px dashed #333;
+    padding: 10px;
+}
+
+/*Dentro del contenedor elemento con position: absolute*/
+.imagen {
+    position: absolute;
+    top: 10px;
+    bottom: 70px;
+    left: 20px;
+    padding: 5px 6px;
+    background-color: #ffcc00;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+
+.imagen:hover {
+    background-color: #ffa500;
+}

@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para las cajas */
+.caja {
+    border: 2px solid #333;
+    margin-bottom: 20px;
+}
+
+/* Caja 1: Uso de shorthand y border-radius */
+.caja1 {
+    background-color: #ff9999;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Caja 2: Propiedades individuales para margin y padding */
+.caja2 {
+    background-color: #99ff99;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* Caja 3: Centrada horizontalmente con shadow y padding shorthand */
+.caja3 {
+    background-color: #9999ff;
+    width: 50%;
+    margin: 20px auto;
+    padding: 30px 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto hover en la Caja 3 para darle un toque interactivo */
+.caja3:hover {
+    background-color: #8a8aff;
+}
