@@ -3,9 +3,7 @@ body {
     background-color: #66a3ff;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 20px;
-    height: 100vh;
+    align-items: center; /* Cambiar de flex-start a center */
     height: 100vh;
     margin: 0;
 }
@@ -15,6 +13,7 @@ body {
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
+    border-radius: 10px; /* Opcional: bordes redondeados */
 }
 
 .contact-card {
