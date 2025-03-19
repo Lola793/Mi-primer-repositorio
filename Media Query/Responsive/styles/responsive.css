@@ -69,23 +69,24 @@ main {
 @media (min-width: 900px) {
     main {
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 50% 50%;
         gap: 5px;
     }
 
     .header,
     .hero,
     .footer {
-        grid-column: span 2;
+        grid-column: span 4;
     }
 
-    .content {
-        width: -60%; 
-        margin: 0; 
+    .content{
+        margin-left: 15%;
+        grid-column:span 70%;
+
     }
 
     .sidebar {
-        width: -20%; 
-        margin: 0;
+        margin-right: 15%;
+        grid-column:span 30px;
     }
 }
